@@ -18,7 +18,7 @@ font-weight: bold;
 const ItemContainer = props => {
     return(
         <Wrapper>
-            <Title>미세먼지 농도 : 15</Title>
+            <Title>미세먼지 농도 : </Title>
             <Item></Item>
         </Wrapper>
     )

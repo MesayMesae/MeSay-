@@ -8,6 +8,7 @@ justify-content: center;
 align-items: center;
 padding-top: 28px;
 
+
 &>img{
     width: 300px;
     height: 300px;
@@ -16,7 +17,6 @@ padding-top: 28px;
 
 &>span{
     font-size: 18px;
-    font-weight: bold;
 }
 `;
 

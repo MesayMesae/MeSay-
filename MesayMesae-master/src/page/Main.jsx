@@ -1,8 +1,20 @@
 import React from "react";
-import ItemContainer from "../components/ItemContainer";
+import styled from "styled-components"
 import Search from "../components/Search";
 import Background from "../components/Background";
+import Imform from "../components/Inform";
+import LatestContainer from "../components/LatestContainer";
+import {createGlobalStyle} from 'styled-components';
 
+const Wrapper = styled.div`
+`;
+
+const GlobalStyle = createGlobalStyle`
+*{
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+    font-family: 'Noto Sans KR', sans-serif;
+}
+`;
 
 class Main extends React.Component {
     constructor(props){
@@ -13,11 +25,12 @@ class Main extends React.Component {
 
     render(){
         return (
-            <div>
+            <Wrapper>
                 <Background/>
-                <Search/>
-               <ItemContainer/>
-            </div>
+                <Search datas={this.props.datas}/>
+               
+               <LatestContainer/>
+            </Wrapper>
         );
     }
 }
