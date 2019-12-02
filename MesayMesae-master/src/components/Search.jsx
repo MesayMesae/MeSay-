@@ -38,7 +38,7 @@ const Search = props => {
                 <select name="where">
                     <option value={props.datas.seoul[0]}>서울</option>
                     <option value={props.datas.busan[1]}>부산</option>
-                    <option value="">대구</option>
+                    <option value>대구</option>
                     <option value="">인천</option>
                     <option value="">광주</option>
                     <option value="">울산</option>

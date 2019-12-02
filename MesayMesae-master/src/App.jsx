@@ -28,11 +28,11 @@ componentDidMount(){
             })
 
             .then(response => {
-              const datas=response.response.body[0].items[0].item
-              this.setState({datas:response.response.body[0].items[0].item})
+              // const datas=response.response.body[0].items[0].item
+              // this.setState({datas:response.response.body[0].items[0].item})
               // datas.map(value=>{console.log(value)})
             
-
+              console.log(response.body)
             })
             .catch(value => {
                 console.log(value)
@@ -42,7 +42,7 @@ componentDidMount(){
         }      
 
 render(){
-  console.log(this.state.datas)
+  console.log(`app data: ${this.state.datas}`)
   return(
     <>
         <Main datas={this.state.datas[0]} />
