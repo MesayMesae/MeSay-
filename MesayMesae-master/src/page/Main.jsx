@@ -24,7 +24,6 @@ class Main extends React.Component {
     }
 
     render(){
-        console.log(`data: ${this.props.datas}`)
         return (
             <Wrapper>
                 <Background/>
