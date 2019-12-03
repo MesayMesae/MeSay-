@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components"
 import Search from "../components/Search";
 import Background from "../components/Background";
-import Imform from "../components/Inform";
 import LatestContainer from "../components/LatestContainer";
 import {createGlobalStyle} from 'styled-components';
 

@@ -35,10 +35,10 @@ const Search = props => {
         <Wrapper>
             <Title>오늘의 미세먼지 농도는?</Title>
             <Form>
-                <select name="where">
-                    <option value={props.datas.seoul[0]}>서울</option>
-                    <option value={props.datas.busan[1]}>부산</option>
-                    <option value>대구</option>
+                <select name="where" >
+                    <option value="">서울</option>
+                    <option value="">부산</option>
+                    <option value="">대구</option>
                     <option value="">인천</option>
                     <option value="">광주</option>
                     <option value="">울산</option>

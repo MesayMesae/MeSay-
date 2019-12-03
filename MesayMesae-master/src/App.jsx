@@ -19,10 +19,11 @@ class App extends React.Component {
       new Promise((res, rej) => {
         parser.parseString(value.data, function (err, result) {
             console.log(result)
+            console.log(result.response.body[0].items)
             if (err) rej(err);
             res(result);
             this.setState({
-              data: result
+              datas: result.response.body[0].items
             })
         }) 
     })
@@ -35,11 +36,8 @@ class App extends React.Component {
   }
 
 render(){
-  console.log(this.props.datas)
   return(
-    <>
-        <Main datas={this.state.datas[0]} />
-    </>
+    <Main datas={this.state.datas} />
   )
 }
 
