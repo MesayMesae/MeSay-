@@ -15,10 +15,11 @@ font-size: 27px;
 font-weight: bold;
 `;
 
-const ItemContainer = props => {
+const ItemContainer = (props) => {
+    console.log(props)
     return(
         <Wrapper>
-            <Title>미세먼지 농도 : </Title>
+            <Title>미세먼지 농도 : {props.data}</Title>
             <Item></Item>
         </Wrapper>
     )

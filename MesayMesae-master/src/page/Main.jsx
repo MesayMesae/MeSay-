@@ -16,17 +16,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 class Main extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-        };
-    }
 
+    componentWillReceiveProps(){
+        console.log(JSON.stringify(this.props.datas) + " ||| main.jsx")
+    }
     render(){
         return (
             <Wrapper>
                 <Background/>
-                <Search datas={this.props.datas}/>
+                <Search datas={JSON.stringify(this.props.datas)}/>
                
                <LatestContainer/>
             </Wrapper>
